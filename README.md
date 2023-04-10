@@ -1,3 +1,1 @@
-# Game Cards
-
-`- shuffle the cards`
+# A card game that creates the deck, shuffles the cards and deals them
