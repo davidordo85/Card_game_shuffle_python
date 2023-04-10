@@ -1,12 +1,6 @@
-suits = ('CLUBS', 'HEARTS', 'SPADES', 'DIAMONDS')
-numbers = ('A', '2', '3', '4', '5', '6', '7', 'J', 'Q', 'K')
+import deck
 
-deck = []
+deck_1 = deck.create_deck()
+deck_shuffle = deck.shuffle(deck_1)
 
-for suit in suits:
-    for number in numbers:
-        card = number + suit
-        deck.append(card)
-
-
-print(deck) 
+print(deck_shuffle)
