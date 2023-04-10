@@ -24,3 +24,15 @@ def shuffle(deck):
         i += 1
     deck = deckShuffle
     return deckShuffle
+
+def deal(deck, numPlayer, numCards):
+    hand = []
+    for player in range(numPlayer):
+        hand.append([])
+
+    for indexCard in range(numCards):
+        for indexPlayer in range(numPlayer):
+            card = deck.pop(0)
+            hand[indexPlayer].append(card)
+
+    return hand
